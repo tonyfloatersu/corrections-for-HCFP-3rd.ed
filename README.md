@@ -1,4 +1,4 @@
-# corrections-for-HCFP-$3^{rd}$.ed
+# Corrections For HCFP (the third edition)
 
 Correction for HCFP 3rd edition's Chinese translation:
 
