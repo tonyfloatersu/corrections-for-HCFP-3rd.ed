@@ -4,8 +4,6 @@ Correction for HCFP 3rd edition's Chinese translation:
 
 I think **ONLY CHINESE READERS** may need this patch file, so the following part will all be **CHINESE EXPLANATION**.
 
-PLEASE NOTE THAT `GITHUB` DO NOT SUPPORT `mathjax.js` FOR MATH FORMULA, SO PLEASE USE THE `README.pdf` FOR CORRECTION.
-
 - `P78`, `4.22习题`, "有一个以上的值为0"，根据英文版本应该是"有一个及以上"。
 
    （虽然也能做，根据我的[解题记录](https://github.com/tonyfloatersu/solution-haskell-craft-of-FP/blob/master/Chapter_4_my_note.hs)里面的函数似乎是可以办到的）
