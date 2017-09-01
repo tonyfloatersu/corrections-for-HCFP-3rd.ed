@@ -26,7 +26,7 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
                | otherwise          = 0
    ```
 
-- `P94`, `data People = People Name Age` 应该是`data People = Person Name Age` 
+- `P94`, `data People = People Name Age`  应该是 `data People = Person Name Age` 
 
    构造类型的构造函数名写错
 
@@ -59,6 +59,23 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
    unzip :: ([a, b]) -> ([a], [b])
    ````
 
+- `P348`, 页末, “4.5节介绍的仿真例子” 应为 ”14.5节介绍的仿真例子“
+
+- `P349`, 页中, ”此时一个Qutemss被生成“ 应为 ”此时一个Outmess被生成”
+
+- `P355`, 页中
+
+   ```Haskell
+   rightSub (Node -- t2) = t2
+   ```
+
+   应为
+
+   ```haskell
+   rightsub (Node _ _ t2) = t2
+   ```
+
+
 - `P433`, 页顶
 
    ```haskell
@@ -86,5 +103,4 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
    ```
 
    ​
-
 
