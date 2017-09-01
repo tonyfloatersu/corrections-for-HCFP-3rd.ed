@@ -28,7 +28,7 @@ PLEASE NOTE THAT `GITHUB` DO NOT SUPPORT `mathjax.js` FOR MATH FORMULA, SO PLEAS
                | otherwise          = 0
    ```
 
-- `P94`, `data People = People Name Age` $\to$ `data People = Person Name Age` 
+- ​`P94`, `data People = People Name Age`  :arrow_right:  `data People = Person Name Age` 
 
    构造类型的构造函数名写错
 
@@ -60,6 +60,25 @@ PLEASE NOTE THAT `GITHUB` DO NOT SUPPORT `mathjax.js` FOR MATH FORMULA, SO PLEAS
    ````haskell
    unzip :: ([a, b]) -> ([a], [b])
    ````
+
+- `P433`, 页顶
+
+   ```haskell
+   newtype MP ab = MP { mp :: (Parse a b) }
+   ```
+
+   应为
+
+   ```haskell
+   newtype MP a b = MP { mp :: (Parse a b) }
+   ```
+
+- `P434`, 页顶
+
+   ```haskell
+   instance Monad Identity where
+       (Identity x) >>= f      = f x -- x >>= f = f x
+   ```
 
    ​
 
