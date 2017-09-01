@@ -26,7 +26,7 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
                | otherwise          = 0
    ```
 
-- ​`P94`, `data People = People Name Age`  :arrow_right:  `data People = Person Name Age` 
+- `P94`, `data People = People Name Age` 应该是`data People = Person Name Age` 
 
    构造类型的构造函数名写错
 
@@ -75,8 +75,16 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
 
    ```haskell
    instance Monad Identity where
+       (Identity x) >>= f      = f x -- x >>= f = fx
+   ```
+
+   更正为
+
+   ```haskell
+   instance Monad Identity where
        (Identity x) >>= f      = f x -- x >>= f = f x
    ```
 
    ​
+
 
