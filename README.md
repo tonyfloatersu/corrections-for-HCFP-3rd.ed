@@ -59,6 +59,8 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
    unzip :: ([a, b]) -> ([a], [b])
    ````
 
+- `P320`, 页顶, "visibe" 应为 "visible"
+
 - `P348`, 页末, “4.5节介绍的仿真例子” 应为 ”14.5节介绍的仿真例子“
 
 - `P349`, 页中, ”此时一个Qutemss被生成“ 应为 ”此时一个Outmess被生成”
@@ -99,7 +101,70 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
 
    出现了两遍
 
-- ​
+- `P392`, 页末
+
+   ```haskell
+   data Expr = Lit Int | Var Var | Op Ops Expr Expr
+   ```
+
+   改为
+
+   ```haskell
+   data Expr = Lit Int | Var | Op Ops Expr Expr
+   ```
+
+- `P394`, 页末
+
+   ```haskell
+   alt :: Parse a b -> Parse a b -> Parse a b
+   alt p1 p2inp = p1 inp ++ p2 inp
+   ```
+
+   改为
+
+   ```haskell
+   alt :: Parse a b -> Parse a b -> Parse a b
+   alt p1 p2 inp = p1 inp ++ p2 inp
+   ```
+
+- `P396`, 页中
+
+   ```haskell
+   [] ++ [(2, "34")]
+   ```
+
+   改为
+
+   ```haskell
+   [] ++ [('2', "34")]
+   ```
+
+- `P396`, 页中
+
+   ```haskell
+   (>*>) :: Parse a b -> Parse a c -> Pare (b, c)
+   ```
+
+   改为
+
+   ```haskell
+   (>*>) :: Parse a b -> Parse a c -> Parse (b, c)
+   ```
+
+- `P430`, 页顶
+
+   ```haskell
+   (>>=) :: ma -> (a -> mb) -> mb
+   ```
+
+   改为
+
+   ```haskell
+   (>>=) :: m a -> (a -> m b) -> m b
+   ```
+
+- `P430`, 页末 “显式分隔符’:‘” 应该改为 “显式分隔符’;‘” 
+
 
 - `P433`, 页顶
 
@@ -129,3 +194,5 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
 
    ​
 
+
+目前检查到chapter 18结束，还余下chapter 19/20。
