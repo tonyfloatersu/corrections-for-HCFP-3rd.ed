@@ -76,6 +76,31 @@ I think **ONLY CHINESE READERS** may need this patch file, so the following part
    ```
 
 
+- `P358`, 页中
+
+   ```haskell
+   inNil t = error "indexT"
+   ```
+
+   应为
+
+   ```haskell
+   isNil t = error "indexT"
+   ```
+
+- `P359`, 页末, ”重新实现10.8的索引系统” 应为 “重新实现12.5的索引系统”
+
+- `P362`, 页中
+
+   ```haskell
+   inter :: Ord a => Set a -> Set a -> Set a
+   inter (Set xs) (Set ys) = Set (int xs ys)
+   ```
+
+   出现了两遍
+
+- ​
+
 - `P433`, 页顶
 
    ```haskell
